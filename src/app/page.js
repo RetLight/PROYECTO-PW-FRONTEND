@@ -34,15 +34,12 @@ export default function Home() {
 
     ///const adminEncontrado = adminData.find(user => user.Correo === usuario && user.Contraseña === password);
 
-    if (usuario === "admin@gmail.com" && password === "admin") {
-      router.push(`/homeAdmin?code=${"71791793"}`); 
-      return; 
-    }
+
 
     const usuarioEncontrado = usuarios.find(user => user.email === usuario && user.password === password);
     
     if(usuarioEncontrado){
-      router.push(`/home?code=${usuarioEncontrado.NroDocumento}`); 
+      router.push(`/home?code=${usuarioEncontrado.NroDni}`); 
     }else{
       setMensajeError("Acceso denegado");
       alert('Acceso denegado');

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import AppBar from '../../components/AppBar/AppBar.jsx';
 import ToolBar from '../../components/ToolBar/ToolBar.jsx';
 import Styles from './libreria.module.css';
-import library from '../../data/library.json';
 import Calendar from '../../components/Calendar/Calendar.jsx';
 import '../../app/globals.css';
 import { useRouter } from 'next/router';
+import librosApi from '../../api/libro.js'
 
 export default function BookLibrary() {
     const router = useRouter();
@@ -13,9 +13,19 @@ export default function BookLibrary() {
     const [showCalendar, setShowCalendar] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
     const bookxPage = 12;
-    const sortedLibrary = [...library].sort((a, b) => a.titulo.localeCompare(b.titulo));
+    const [libros, setLibros] = useState([]);
+    const sortedLibrary = [...libros].sort((a, b) => a.titulo.localeCompare(b.titulo));
     const [getISBN13, setISBN13] = useState("");
     const [showToolBar, setShowToolBar] = useState(true); 
+
+    const handleOnLoad = async () => {
+        try {
+            const rawLibros = await librosApi.findAll();
+            setLibros(rawLibros.data);
+          } catch (error) {
+            console.error("Error fetching users:", error);
+          }
+    }
 
     const handleReservar = (isbn) => {
         setShowCalendar(true);
@@ -68,6 +78,10 @@ export default function BookLibrary() {
         );
     };
 
+    useEffect(() => {
+        handleOnLoad();
+      },[])
+
     return (
         <main className={Styles.contenedor}>
             <style jsx global>{`
@@ -99,7 +113,7 @@ export default function BookLibrary() {
                                 isbn={libro.ISBN13}
                                 autor={libro.autor}
                                 editor={libro.editorial}
-                                imagen={libro["imagen-portada-url"]}
+                                imagen={libro["portada_url"]}
                                 estado={libro.estado}
                             />
                         ))}
