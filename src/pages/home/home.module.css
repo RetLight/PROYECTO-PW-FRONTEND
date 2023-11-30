@@ -1,0 +1,74 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mainContent {
+    display: flex;
+    flex-grow: 1; /* Añade esta línea */
+    width: 100%;
+}
+
+.BarraLateral {
+    width: 11.4%; 
+    flex-grow: 1; /* Añade esta línea para que crezca con el contenido */
+    display: flex; /* Añade esta línea */
+    flex-direction: column; /* Añade esta línea */
+    justify-content: space-between; /* Añade esta línea */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.contenido {
+    width: 88.6%;
+    flex-grow: 1; /* Añade esta línea para que crezca con el contenido */
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Bienvenida {
+    margin-top: 1.5%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+}
+
+.UltimasReservas, .ProximosVencer {
+    margin-top: 1.5%;
+    background-color: #F3EDF7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.r1, .r2 {
+    padding: 1.5%;
+}
+
+.librosR, .librosP {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnVermas, .btnVertodo {
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+}
+
+.btnVermas:hover, .btnVertodo:hover {
+    text-decoration: underline;
+}
+

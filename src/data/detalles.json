@@ -1,0 +1,40 @@
+[
+    {
+        "libro": "Curso de Derecho Constitucional Tomo ii",
+        "nombre": "Lucia Torres",
+        "descripcion": "El tomo II de esta obra aborda la evolución y antecedentes de la actual Carta Fundamental de 1980 y se presenta un profundo y pormenorizado análisis de los temas que plantean sus capítulos: Bases de la Institucionalidad, Nacionalidad y Ciudadanía, y Derechos y Deberes Fundamentales. Si bien el texto sigue el espíritu del tomo I, en el sentido de hallarse dirigido al alumno de Derecho, la riqueza de su temática no solo es de interés de profesionales del área y personas interesadas en la disciplina misma, sino también constituye un instrumento indispensable para la comprensión y aplicación material de la Constitución en nuestro país. Esta tercera edición ampliada examina todas las reformas constitucionales que ha tenido la Constitución de Chile hasta marzo de 2021. Del mismo modo, realiza un análisis crítico del proceso de elección de los miembros de la Convención Constituyente, siendo un aporte para el proceso de elaboración de una nueva Constitución",
+        "tipo": "Derecho constitucional",
+        "id": 1
+    },
+    {
+        "libro": "The Go Programming Language",
+        "nombre": "Juan Fernandez",
+        "descripcion": "The authoritative resource to writing clear and idiomatic Go to solve real-world problems Google's Go team member Alan A. A. Donovan and Brian Kernighan, co-author of The C Programming Language, provide hundreds of interesting and practical examples of well-written Go code to help programmers learn this flexible, and fast, language. It is designed to get you started programming with Go right away and then to progress on to more advanced topics. Basic components: an opening tutorial provides information and examples to get you off the ground and doing useful things as quickly as possible. ",
+        "tipo": "Lenguajes de programación scripting",
+        "id": 2
+    },
+    {
+        "libro": "Extreme Programming (Xp)",
+        "nombre": "Pedro Martinez",
+        "descripcion": "Para el desarrollo de software existen diversas metodologías, las que se agrupan en ágiles y tradicionales. Las metodologías ágiles promueven las relaciones interpersonales, son adaptativas, se enfocan en las personas, caracterizándose por existir una estrecha colaboración entre el cliente y el equipo de desarrollo. Extreme Programming (XP) se encuentra entre las metodologías ágiles más utilizadas.",
+        "tipo": "Tecnología de la información: cuestiones generales",
+        "id": 3
+    },
+    {
+        "libro": "Software Adaptation in an Open Environment: A Software Architecture Perspective (libro en Inglés)",
+        "nombre": "Ana Martinez",
+        "descripcion": "The book is about a very active research field in software engineering. In modern society, the fact of the world's high reliance on software requires the system's robustness, i.e., continual availability and satisfactory service quality. This requirement gives rise to the popularity of the research on the self-adaptive software in open environment. There are some academic conferences dedicated to this field. But there is a lack of monographs about the topic. We believe such need is unmet in marketplace.",
+        "tipo": "Software",
+        "id": 4
+    },
+    {
+        "libro": "Clean Code: A Handbook of Agile Software Craftsmanship (libro en Inglés)",
+        "nombre": "Lucia Martinez",
+        "descripcion": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code on the fly into a book that will instill within you the values of a software craftsman and make you a better programmer--but only if you work at it. ",
+        "tipo": "Pruebas y verificación de software",
+        "id": 5
+    }
+
+
+
+]

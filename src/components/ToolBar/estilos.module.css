@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+    background-color: #D9D9D9;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100%; /* Cambiado aquí */
+    overflow-y: auto;
+}
+
+.enlace1, .enlace2, .enlace3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: Roboto;
+}
+.lnk{
+    text-decoration: none;
+    color:#6750A4;
+    text-decoration: underline;
+}
+.lnk:hover{
+    font-weight: bold;
+    color: #6750A4;
+}
+
+.menu{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.menu:hover{
+    background-color: transparent;
+    color: #373147;
+}
+.v1{
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,80 @@
+.BarraLateral{
+
+  width:11.4%;
+  position: fixed;
+  height: 100%;
+  
+  
+}
+.RecuadroDetalles{
+    margin-top: 120px;
+    margin-left: 15rem;
+    border: 1px solid black;
+    position: absolute;
+    padding: 50px;
+    background-color:  #FEF7FF;;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.SelectContainer {
+    position: absolute;
+ 
+    top: 15px;
+    
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.TipoContainer{
+    text-align: left;
+    margin-top: 10px;
+    
+   
+
+}
+
+.Tipo{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 10%;
+    padding-left: 5px;
+    margin-top: 7px;
+
+}
+.Descripcion{
+    text-align: center;
+    padding: 8px;
+}
+.nombreLibro{
+    text-align: center;
+    padding: 8px;
+}
+.Reservado{
+    text-align: right;
+    
+}
+.ReservadoContainer{
+    margin-top: 50px;
+}
+.InicialCirculo {
+    width: 40px;
+    height: 40px;
+    background-color: #007BFF;
+   
+    color: #fff;
+    border-radius: 50%;
+    
+    text-align: center;
+    line-height: 40px;
+    
+    font-size: 20px;
+    float: left;
+  
+   margin-top: 50px;
+    
+
+}
+

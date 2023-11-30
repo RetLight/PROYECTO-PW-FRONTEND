@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+.contenido{
+  margin: 1rem;
+  background-color: #FEF7FF;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.h1 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+  }
+
+
+.Seccion{
+  display: flex;
+  background-color: #FEF7FF;
+  margin-top: 15px;
+  position: relative;
+}
+
+
+.Buscar{
+    display: block;
+    background-color: #FEF7FF;
+    position: relative;
+}
+
+.barra1{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 18px;
+    left: -4px;
+    top: -16px;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    color: #6750A4;
+    font-weight: 400;
+    line-height: 16px;
+    position: relative;
+}
+
+.barra1 label{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    background: #FEF7FF;
+    padding: 0 4px;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.textbar{
+    width: 620px;
+    height: 56px;
+    border-radius: 4px;
+    border: 3px solid #6750A4;
+    border-width: 3px;
+    background-image: url('../../../public/images/lupa.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 40px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+}
+
+.textbar2{
+    width: 392px;
+    height: 56px;
+    border-radius: 4px;
+    border: 3px solid #6750A4;
+    border-width: 3px;
+    background-image: url('../../../public/images/lupa.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 40px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+}
+
+.textbar:focus, .textbar2:focus{
+    outline: none;
+    border: 3px solid #6750A4; 
+    position: relative;
+  }
+
+.Filtro label{
+    display: block;
+    color: #6750A4;
+    font-weight: bold;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+.titulo2{
+    color: #6750A4;
+    font-size: 20px;
+    position: relative;
+}
+
+.Filtro{
+    margin-left: 400px;
+    position: relative;
+}
+
+.input[type="text"] {
+    width: 590px;
+    height: 56px;
+    border-radius: 4px;
+    border-width: 3px;
+    gap: 10px;
+    padding: 8px;
+    margin: 10px;
+    background-color: #FEF7FF;
+    border-color: #6750A4;
+    color: gray;
+    font-family: 'Roboto';
+    position: relative;
+  }
+
+.select {
+    width: 392px;
+    height: 56px;
+    border-radius: 4px;
+    border-width: 3px;
+    gap: 10px;
+    padding: 8px;
+    margin: 10px;
+    background-color: #FEF7FF;
+    border-color: #6750A4;
+    color: gray;
+    font-family: 'Roboto';
+    position: relative;
+
+  }
+  
+.button {
+    width: 96px;
+    height: 40px;
+    top: 442px;
+    left: 1030px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border:2px solid #6750A4;
+    gap:8px;
+    background-color: white;
+    color: #6750A4;
+  }
+  
+.button:hover {
+    background-color: #cfcadd;;
+}
+
+.button2{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+  gap: 8px;
+  background-color: #6750A4;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.button2:hover {
+    background-color: #cfcadd;;
+}
+
+ .titulo2{
+    color: black;
+    font-family: 'Roboto';
+    position: relative;
+  }
+  
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    background-color: #FEF7FF;
+    position: relative;
+  }
+  
+.checkbox{
+    width: 60px
+    height 60px;
+    border: 2px solid #6750A4;
+    position: relative;
+    
+  }
+
+  .checkbox:focus {
+    outline: none; 
+    border: 2px solid purple;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .card::before {
+    content: "X";
+    color: rgb(165, 165, 165); /* Color de la "X" */
+    margin-right: 10px; /* Espacio entre la "X" y el texto de la tarjeta */
+  }
+
+  .footer{
+    background-color: #FEF7FF;
+    margin-top: 80px;
+    margin-left: 800px;
+    position: relative;
+  }
+
+  .BarraLateral{
+    width: 8.4%;
+    position: fixed;
+    height: 100%;
+  }
+
+
+  .div1{
+    margin-top: 1rem;
+    margin-left: 13rem;
+  }

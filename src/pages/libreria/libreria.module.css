@@ -1,0 +1,143 @@
+.cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.mainContent {
+    display: flex;
+    flex-grow: 1; 
+    width: 100%;
+}
+
+.BarraLateral {
+    width: 11.4%; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.contenido {
+    width: 88.6%;
+    flex-grow: 1;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttonAdd {
+    height: 40px;
+    width: 207px;
+    background-color: #6750A4;
+    color: white;
+}
+
+.busqueda {
+    padding-top: 20px;
+    padding-left: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.Bienvenida {
+    margin-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+.seccionlibros {
+    margin-top: 2%;
+    margin-right: 8%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.libro {
+    display: flex;
+    flex-direction: column; /* Asegura que los hijos se muestren en un orden vertical */
+    border: 1px solid #CAC4D0;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    width: 30%; 
+    height: 33rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p1, .p2{
+    align-items: center; 
+}
+
+.p1{
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.p2{
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.p3{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ISBN, .autor, .editor{
+    margin-left: 5%;
+}
+
+.estado{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between; /* Esto separará los dos elementos, empujándolos a los bordes opuestos del contenedor */
+    align-items: center; 
+    border-bottom: 1px solid black;
+}
+
+.libro {
+    display: flex;
+    flex-direction: column; /* Asegura que los hijos se muestren en un orden vertical */
+    align-items: center; /* Opcional, para centrar los hijos horizontalmente */
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.buttonReserva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
+    border-radius: 5px; 
+    background-color: #6750A4;
+    color: white;
+}

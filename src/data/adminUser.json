@@ -1,0 +1,90 @@
+[
+    {
+        "nombres": "Juan",
+        "apellidos": "Zapata",
+        "tipoDoc": "DNI",
+        "numeroDocumento": "82182837",
+        "correo": "juanZapata@gmail.com",
+        "contraseña": "juan12445",
+        "idioma": "Castellano",
+        "prefijo": "M",
+        "color": "#CD5C5C"
+    },
+    {
+        "nombres": "Ana",
+        "apellidos": "López",
+        "tipoDoc": "CE",
+        "numeroDocumento": "54321987",
+        "correo": "anaLopez@gmail.com",
+        "contraseña": "ana7890",
+        "idioma": "Inglés",
+        "prefijo": "F",
+        "color": "#008080"
+    },
+    {
+        "nombres": "Carlos",
+        "apellidos": "Gómez",
+        "tipoDoc": "DNI",
+        "numeroDocumento": "76543210",
+        "correo": "carlosGomez@yahoo.com",
+        "contraseña": "carlos1234",
+        "idioma": "Castellano",
+        "prefijo": "M",
+        "color": "#FFA500"
+    },
+    {
+        "nombres": "Laura",
+        "apellidos": "Pérez",
+        "tipoDoc": "CE",
+        "numeroDocumento": "98765432",
+        "correo": "lauraPerez@hotmail.com",
+        "contraseña": "laura5678",
+        "idioma": "Inglés",
+        "prefijo": "F",
+        "color": "#800080"
+    },
+    {
+        "nombres": "Miguel",
+        "apellidos": "Torres",
+        "tipoDoc": "DNI",
+        "numeroDocumento": "12345678",
+        "correo": "miguelTorres@gmail.com",
+        "contraseña": "miguel9999",
+        "idioma": "Castellano",
+        "prefijo": "M",
+        "color": "#32CD32"
+    },
+    {
+        "nombres": "María",
+        "apellidos": "Martínez",
+        "tipoDoc": "CE",
+        "numeroDocumento": "87654321",
+        "correo": "mariaMartinez@yahoo.com",
+        "contraseña": "maria4321",
+        "idioma": "Inglés",
+        "prefijo": "F",
+        "color": "#6A5ACD"
+    },
+    {
+        "nombres": "Pedro",
+        "apellidos": "Hernández",
+        "tipoDoc": "DNI",
+        "numeroDocumento": "43218765",
+        "correo": "pedroHernandez@hotmail.com",
+        "contraseña": "pedro777",
+        "idioma": "Castellano",
+        "prefijo": "M",
+        "color": "#FF6347"
+    },
+    {
+        "nombres": "Sofía",
+        "apellidos": "Díaz",
+        "tipoDoc": "CE",
+        "numeroDocumento": "67892134",
+        "correo": "sofiaDiaz@gmail.com",
+        "contraseña": "sofia2468",
+        "idioma": "Inglés",
+        "prefijo": "F",
+        "color": "#4B0082"
+    }
+]

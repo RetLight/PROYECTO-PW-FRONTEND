@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.contenido{
+    margin-left: 30px;
+    margin-right: 440px;
+}
+
+.header{
+    display: flex;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 28px;
+    
+}
+
+.button1{
+    width: 201px;
+    height: 40px;
+    gap: 8px;
+    background-color:  #6750A4;
+    color:  #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 900px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 13px;
+    text-decoration: none;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+.button1:hover {
+    background-color: #b19ee7;
+  }
+
+
+.seccion1{
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 18px;
+    left: -4px;
+    top: -16px;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    color: #6750A4;
+    font-weight: 400;
+    line-height: 16px;
+}
+.seccion1 label{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    background: #FEF7FF;
+    padding: 0 4px;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.textbar{
+    width: 590px;
+    height: 56px;
+    border-radius: 4px;
+    border: 3px solid #6750A4;
+    border-width: 3px;
+    background-image: url('../../../public/images/lupa.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 40px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.textbar:focus {
+    outline: none;
+    border: 3px solid #6750A4; 
+  }
+
+.limpiar{
+    width: 120px;
+    height: 40px;
+    gap: 8px;
+    background-color:  #6750A4;
+    color:  #FFFFFF;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 11px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    
+}
+
+.limpiar:hover {
+    background-color: #b19ee7;
+  }
+
+.resultados{
+    display: flex;
+    list-style-type: none;
+}
+
+.contenedorLibro {
+    border: 2px solid #ccc; /* Borde para el contenedor */
+    padding: 10px 40px 20px 30px;
+    width: 314px; /* Establece el ancho fijo para el contenedor */
+    border-radius: 12px;
+    margin-right: 60px;/* Para que los contenedores estén uno al lado del otro */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+.seccionTitulo{
+    display: flex;
+}
+
+.inicialesCirculo {
+    width: 60px; /* Ajusta el ancho del círculo */
+    height: 60px; /* Ajusta la altura del círculo */
+    border-radius: 50%;
+    background-color: #6750A4;
+    color: white;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+
+.libro_titulo{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 40px;
+    text-align: justify;
+    display: inline-flex;
+    
+}
+
+.libro_imagen{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.libro_ISBN{
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.libro_autor{
+    text-decoration: underline;
+    text-align: left;
+    font-size: 16px;
+    color: #49454F;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.libro_editor{
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.noResults{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.BarraLateral{
+    width: 8.4%;
+    position: fixed;
+    height: 100%;
+  }
+
+
+  .div1{
+    margin-top: 1rem;
+    margin-left: 13rem;
+  }

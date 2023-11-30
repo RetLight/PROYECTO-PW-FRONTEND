@@ -1,0 +1,68 @@
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+}
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 23vw; 
+    border-color: aqua;
+    border-radius: 8%;
+    background-color: #ECE6F0;
+}
+
+.btn{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.cancelar, .aceptar {
+    background: transparent; /* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno que aparece al hacer clic o al enfocar el botón */
+    cursor: pointer; /* Mantiene el puntero del ratón para indicar que es un botón */
+    padding: 0; /* Elimina cualquier padding si es necesario */
+    margin: 0; /* Elimina cualquier margen si es necesario */
+}
+
+/* También es posible que quieras eliminar los estilos para los estados hover, active y focus */
+.cancelar:hover, .aceptar:hover,
+.cancelar:active, .aceptar:active,
+.cancelar:focus, .aceptar:focus {
+    background: transparent; /* Elimina el fondo */
+    border: none;
+    outline: none;
+    box-shadow: none; /* En caso de que haya algún shadow */
+}
+
+.cancelar{
+    padding-right: 10%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* fondo semitransparente */
+    z-index: 1000;
+}
+
+.calendarioModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

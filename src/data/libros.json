@@ -1,0 +1,72 @@
+[
+  {
+    "titulo": "Software la Superbabosa",
+    "autor": "Joyce dunbar",
+    "isbn": "9788423687572",
+    "tipo": "Infantil y juvenil",
+    "id": 1
+  },
+  {
+    "titulo": "El El Vaticano II como software de la iglesia actualii",
+    "autor": "Peter hünermann",
+    "isbn": "9789563570182",
+    "tipo": "Religión",
+    "id": 3
+  },
+  {
+    "titulo": "Goodreads Software y el estupor informático",
+    "autor": "Joyce dunbar",
+    "isbn": "9788423626786",
+    "tipo": "Infantil",
+    "id": 4
+  },
+  {
+    "titulo": "Como Elegir y Utilizar Software Educativo",
+    "autor": "David squires,david mcdougall",
+    "isbn": "9788471124180",
+    "tipo": "Recursos y materiales didácticos para docentes",
+    "id": 5
+  },
+  {
+    "titulo": "MATEMATICA DISCRETA CON APOYO SOFTWARE",
+    "autor": "Vílchez",
+    "isbn": "9789587787047",
+    "tipo": "Ciencias basicas",
+    "id": 6
+  },
+  {
+    "titulo": "Fundamentos de Tecnología de la Información: Hardware y Software Para pc",
+    "autor": "David anfinson,ken quamme",
+    "isbn": "9788483225165",
+    "tipo": "Certificación informática: cisco",
+    "id": 7
+  },
+  {
+    "titulo": "Diseño de Software: 2ª Edición",
+    "autor": "Alicia durango",
+    "isbn": "9781519620736",
+    "tipo": "Gestión de proyectos empresariales",
+    "id": 8
+  },
+  {
+    "titulo": "Método de investigación en ingeniería del software",
+    "autor": "Genero",
+    "isbn": "9788499645070",
+    "tipo": "Ingeniería del software",
+    "id": 9
+  },
+  {
+    "titulo": "Clean Code: A Handbook of Agile Software Craftsmanship (libro en Inglés)",
+    "autor": "Robert martin",
+    "isbn": "9780132350884",
+    "tipo": "Pruebas y verificación de software",
+    "id": 10
+  },
+  {
+    "titulo": "NuevoLibro",
+    "autor": "Autor",
+    "isbn": "123",
+    "tipo": "Tipo",
+    "id": 11
+  }
+]

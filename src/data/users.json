@@ -1,0 +1,239 @@
+[
+    {
+        "Nombres": "Lucia",
+        "Apellidos": "Torres",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "76533990",
+        "Correo": "lucia.torres@email.com",
+        "Contraseña": "UED7AyFM"
+    },
+    {
+        "Nombres": "Juan",
+        "Apellidos": "Fernandez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "77457639",
+        "Correo": "juan.fernandez@email.com",
+        "Contraseña": "gJf1SRHr"
+    },
+    {
+        "Nombres": "Pedro",
+        "Apellidos": "Martinez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C5828809",
+        "Correo": "pedro.martinez@email.com",
+        "Contraseña": "spDEoQU6"},
+    {
+        "Nombres": "Ana",
+   "Apellidos": "Martinez",
+   "TipoDocumento": "DNI",
+   "NroDocumento": "76410091",
+   "Correo": "ana.martinez@email.com",
+   "Contraseña": "UEXEozc6"},
+    {
+        "Nombres": "Lucia",
+        "Apellidos": "Martinez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "73659646",
+        "Correo": "lucia.martinez@email.com",
+        "Contraseña": "z8mRxoWi"},
+    {
+        "Nombres": "Juan",
+        "Apellidos": "Lopez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "76826919",
+        "Correo": "juan.lopez@email.com",
+        "Contraseña": "VAATIEWh"},
+    {
+   
+        "Nombres": "Pedro",
+        "Apellidos": "Torres",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "74748673",
+        "Correo": "pedro.torres@email.com",
+        "Contraseña": "9ElmnN67"},
+    {
+   
+        "Nombres": "Ana",
+        "Apellidos": "Torres",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "71997602",
+        "Correo": "ana.torres@email.com",
+        "Contraseña": "ebV981lc"},
+    {
+   
+        "Nombres": "Ana",
+        "Apellidos": "Gonzales",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C9189828",
+        "Correo": "ana.gonzales@email.com",
+        "Contraseña": "sC6KLorJ"},
+    {
+   
+        "Nombres": "Lucia",
+        "Apellidos": "Fernandez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "71161944",
+        "Correo": "lucia.fernandez@email.com",
+        "Contraseña": "SgAPCj0L"},
+    {
+   
+        "Nombres": "Lucia",
+        "Apellidos": "Sanchez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "78123594",
+        "Correo": "lucia.sanchez@email.com",
+        "Contraseña": "2ifS0r4g"},
+    {
+   
+        "Nombres": "Maria",
+        "Apellidos": "Perez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C3056867",
+        "Correo": "maria.perez@email.com",
+        "Contraseña": "P5qVPHv2"},
+    {
+   
+        "Nombres": "Maria",
+        "Apellidos": "Martinez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "79177131",
+        "Correo": "maria.martinez@email.com",
+        "Contraseña": "JoO2z0mZ"},
+    {
+   
+        "Nombres": "Miguel",
+        "Apellidos": "Sanchez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "75390045",
+        "Correo": "miguel.sanchez@email.com",
+        "Contraseña": "UXZHVxMi"},
+    {
+   
+        "Nombres": "David",
+        "Apellidos": "Martinez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C5447381",
+        "Correo": "david.martinez@email.com",
+        "Contraseña": "0vz7jvpG"},
+    {
+   
+        "Nombres": "Lucia",
+        "Apellidos": "Ramirez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C4103091",
+        "Correo": "lucia.ramirez@email.com",
+        "Contraseña": "bfeBfvd5"},
+    {
+   
+        "Nombres": "Admin",
+        "Apellidos": "P",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "71791793",
+        "Correo": "maria.martinez@email.com",
+        "Contraseña": "tW2rcxVA"},
+    {
+   
+        "Nombres": "Jose",
+        "Apellidos": "Lopez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C9910240",
+        "Correo": "jose.lopez@email.com",
+        "Contraseña": "wY9rfppd"},
+    {
+   
+        "Nombres": "Carmen",
+        "Apellidos": "Torres",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "76033957",
+        "Correo": "carmen.torres@email.com",
+        "Contraseña": "uacQcYLi"},
+    {
+   
+        "Nombres": "Maria",
+        "Apellidos": "Lopez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "74430474",
+        "Correo": "maria.lopez@email.com",
+        "Contraseña": "aBhcjv7E"},
+    {
+   
+        "Nombres": "Pedro",
+        "Apellidos": "Torres",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C2098451",
+        "Correo": "pedro.torres@email.com",
+        "Contraseña": "sZFoxUQV"},
+    {
+   
+        "Nombres": "Laura",
+        "Apellidos": "Rodriguez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C3343804",
+        "Correo": "laura.rodriguez@email.com",
+        "Contraseña": "VqwmVNtf"},
+    {
+   
+        "Nombres": "Laura",
+        "Apellidos": "Garcia",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C0816014",
+        "Correo": "laura.garcia@email.com",
+        "Contraseña": "jCoD87fm"},
+    {
+   
+        "Nombres": "Ana",
+        "Apellidos": "Torres",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C7193698",
+        "Correo": "ana.torres@email.com",
+        "Contraseña": "sDE0rOqq"},
+    {
+   
+        "Nombres": "Maria",
+        "Apellidos": "Garcia",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "71948688",
+        "Correo": "maria.garcia@email.com",
+        "Contraseña": "2Tfd7SWt"},
+    {
+   
+        "Nombres": "Lucia",
+        "Apellidos": "Lopez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "73656197",
+        "Correo": "lucia.lopez@email.com",
+        "Contraseña": "QZf8axiu"},
+    {
+   
+        "Nombres": "Ana",
+        "Apellidos": "Garcia",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "70116616",
+        "Correo": "ana.garcia@email.com",
+        "Contraseña": "3rPtI4u7"},
+    {
+   
+        "Nombres": "Maria",
+        "Apellidos": "Lopez",
+        "TipoDocumento": "DNI",
+        "NroDocumento": "76973400",
+        "Correo": "maria.lopez@email.com",
+        "Contraseña": "njsVMRsa"},
+    {
+   
+        "Nombres": "Juan",
+        "Apellidos": "Fernandez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C2437093",
+        "Correo": "juan.fernandez@email.com",
+        "Contraseña": "V0MWcPEO"},
+    {
+   
+        "Nombres": "David",
+        "Apellidos": "Perez",
+        "TipoDocumento": "CE",
+        "NroDocumento": "C6455333",
+        "Correo": "david.perez@email.com",
+        "Contraseña": "1FPWWdyK"
+    }
+]

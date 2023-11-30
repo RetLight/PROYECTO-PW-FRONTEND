@@ -1,0 +1,219 @@
+.contornoregistrar {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 725px;
+  left: 991px;
+  width: 118px;
+  height: 41px;
+}
+.apellidos,
+.nombres {
+  position: absolute;
+  top: 433px;
+  left: 380px;
+  display: inline-block;
+  width: 105px;
+  height: 28px;
+}
+.apellidos {
+  top: 521px;
+}
+.ingresarapellidos,
+.ingresarnombres {
+  border: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 461px;
+  left: 379px;
+  width: 154px;
+  height: 41px;
+}
+.ingresarapellidos {
+  top: 549px;
+}
+.nroDeDocumento,
+.tipoDeDocumento {
+  position: absolute;
+  top: 609px;
+  left: 380px;
+  display: inline-block;
+  width: 105px;
+  height: 28px;
+}
+.nroDeDocumento {
+  top: 697px;
+}
+.ingresardocumentos,
+.ingresarnrodocumento {
+  border: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 637px;
+  left: 379px;
+  width: 154px;
+  height: 41px;
+}
+.ingresarnrodocumento {
+  top: 725px;
+}
+.registroDeUsuario,
+.sistemaDeReserva {
+  position: absolute;
+  top: 236px;
+  left: 546px;
+  font-size: 32px;
+  color: #000;
+  display: inline-block;
+  width: 481px;
+  height: 70px;
+}
+.registroDeUsuario {
+  top: 290px;
+  left: 616px;
+  width: 341px;
+  height: 80px;
+}
+.datosPersonales {
+  position: absolute;
+  top: 386px;
+  left: 379px;
+  font-size: 12px;
+}
+.correoElectronico,
+.password {
+  position: absolute;
+  top: 433px;
+  left: 974px;
+  display: inline-block;
+  width: 105px;
+  height: 28px;
+}
+.password {
+  top: 521px;
+}
+.ingresarcorreoelectronico,
+.ingresarpassword {
+  border: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 461px;
+  left: 973px;
+  width: 154px;
+  height: 41px;
+}
+.ingresarpassword {
+  top: 549px;
+}
+.ingresePasswordNuevamente {
+  position: absolute;
+  top: 609px;
+  left: 973px;
+  display: inline-block;
+  width: 181px;
+  height: 28px;
+}
+.ingresarcontradenuevo {
+  border: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 637px;
+  left: 973px;
+  width: 154px;
+  height: 41px;
+}
+.datosDeLa {
+  position: absolute;
+  top: 386px;
+  left: 973px;
+  font-size: 12px;
+}
+.contornoregistrarParent,
+.registrarbutton {
+  text-align: left;
+  font-size: 10px;
+  color: #5a007a;
+  font-family: Inter;
+}
+.registrarbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 740px;
+  left: 1028px;
+  display: inline-block;
+  width: 51px;
+  height: 11px;
+}
+.contornoregistrarParent {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow-x: auto;
+}
+
+.nombres, .apellidos, .tipoDeDocumento, .nroDeDocumento, .correoElectronico, .password, .ingresePasswordNuevamente, .datosDeLa {
+  margin-right: 10px; 
+}
+
+.contornoregistrar {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 725px;
+  left: 991px;
+  width: 118px;
+  height: 41px;
+}
+
+.ingresarnombres,
+.ingresarapellidos,
+.ingresardocumentos,
+.ingresarnrodocumento,
+.ingresarcorreoelectronico,
+.ingresarpassword,
+.ingresarcontradenuevo {
+  border: 2px solid #800080; 
+  font-weight: bold;
+  width: 300px; 
+}
+
+.contornoregistrar {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #fceaff;
+  position: absolute;
+  top: 725px;
+  left: 991px;
+  width: 118px;
+  height: 41px;
+}
+.datosPersonales,
+.datosDeLa {
+  font-weight: bold;
+  font-size: 16px;
+}
+.contornoregistrarParent {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.contornoregistrarParent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%);
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow-x: auto;
+}
