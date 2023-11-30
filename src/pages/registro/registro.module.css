@@ -1,219 +1,93 @@
-.contornoregistrar {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 725px;
-  left: 991px;
-  width: 118px;
-  height: 41px;
-}
-.apellidos,
-.nombres {
-  position: absolute;
-  top: 433px;
-  left: 380px;
-  display: inline-block;
-  width: 105px;
-  height: 28px;
-}
-.apellidos {
-  top: 521px;
-}
-.ingresarapellidos,
-.ingresarnombres {
-  border: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 461px;
-  left: 379px;
-  width: 154px;
-  height: 41px;
-}
-.ingresarapellidos {
-  top: 549px;
-}
-.nroDeDocumento,
-.tipoDeDocumento {
-  position: absolute;
-  top: 609px;
-  left: 380px;
-  display: inline-block;
-  width: 105px;
-  height: 28px;
-}
-.nroDeDocumento {
-  top: 697px;
-}
-.ingresardocumentos,
-.ingresarnrodocumento {
-  border: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 637px;
-  left: 379px;
-  width: 154px;
-  height: 41px;
-}
-.ingresarnrodocumento {
-  top: 725px;
-}
-.registroDeUsuario,
-.sistemaDeReserva {
-  position: absolute;
-  top: 236px;
-  left: 546px;
-  font-size: 32px;
-  color: #000;
-  display: inline-block;
-  width: 481px;
-  height: 70px;
-}
-.registroDeUsuario {
-  top: 290px;
-  left: 616px;
-  width: 341px;
-  height: 80px;
-}
-.datosPersonales {
-  position: absolute;
-  top: 386px;
-  left: 379px;
-  font-size: 12px;
-}
-.correoElectronico,
-.password {
-  position: absolute;
-  top: 433px;
-  left: 974px;
-  display: inline-block;
-  width: 105px;
-  height: 28px;
-}
-.password {
-  top: 521px;
-}
-.ingresarcorreoelectronico,
-.ingresarpassword {
-  border: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 461px;
-  left: 973px;
-  width: 154px;
-  height: 41px;
-}
-.ingresarpassword {
-  top: 549px;
-}
-.ingresePasswordNuevamente {
-  position: absolute;
-  top: 609px;
-  left: 973px;
-  display: inline-block;
-  width: 181px;
-  height: 28px;
-}
-.ingresarcontradenuevo {
-  border: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 637px;
-  left: 973px;
-  width: 154px;
-  height: 41px;
-}
-.datosDeLa {
-  position: absolute;
-  top: 386px;
-  left: 973px;
-  font-size: 12px;
-}
-.contornoregistrarParent,
-.registrarbutton {
-  text-align: left;
-  font-size: 10px;
-  color: #5a007a;
-  font-family: Inter;
-}
-.registrarbutton {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 740px;
-  left: 1028px;
-  display: inline-block;
-  width: 51px;
-  height: 11px;
-}
-.contornoregistrarParent {
-  position: relative;
-  background-color: #fff;
-  width: 100%;
-  height: 1024px;
-  overflow-x: auto;
-}
-
-.nombres, .apellidos, .tipoDeDocumento, .nroDeDocumento, .correoElectronico, .password, .ingresePasswordNuevamente, .datosDeLa {
-  margin-right: 10px; 
-}
-
-.contornoregistrar {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 725px;
-  left: 991px;
-  width: 118px;
-  height: 41px;
-}
-
-.ingresarnombres,
-.ingresarapellidos,
-.ingresardocumentos,
-.ingresarnrodocumento,
-.ingresarcorreoelectronico,
-.ingresarpassword,
-.ingresarcontradenuevo {
-  border: 2px solid #800080; 
+/* registro.module.css */
+.title {
+  text-align: center;
+  font-size: 24px;
   font-weight: bold;
-  width: 300px; 
+  color: #333; /* Ajusta el color según tu diseño */
+  margin-top: 30px; /* Asegura un espacio en la parte superior */
+  margin-bottom: 10px;
 }
 
-.contornoregistrar {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: #fceaff;
-  position: absolute;
-  top: 725px;
-  left: 991px;
-  width: 118px;
-  height: 41px;
+.subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: #666; /* Ajusta el color según tu diseño */
+  margin-bottom: 20px;
 }
-.datosPersonales,
-.datosDeLa {
-  font-weight: bold;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.center_container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Ajustar según el ancho deseado */
+  max-width: 960px; /* Ajustar según el ancho deseado */
+  flex-wrap: wrap; /* Permite la adaptabilidad en pantallas pequeñas */
+}
+
+.columnizquierda, .columnderecha {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px); /* Resta 20px para considerar el espaciado */
+  margin: 10px;
+}
+
+.columna_subtitulo {
+  font-size: 18px;
+  color: #5E2BFF;
+  margin-bottom: 15px;
+}
+
+.input_container {
+  margin-bottom: 10px;
+}
+
+.ingreso {
+  border: 1px solid #5E2BFF;
+  border-radius: 5px;
+  padding: 10px;
   font-size: 16px;
-}
-.contornoregistrarParent {
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-}
-.contornoregistrarParent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-45%, -55%);
-  background-color: #fff;
   width: 100%;
-  height: 1024px;
-  overflow-x: auto;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.registerButton { /* Asegúrate de que la clase coincida con la usada en el JSX */
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #9A77FF;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; /* Opcional: para letras mayúsculas en el botón */
+}
+
+/* Añadir estilos para los errores de validación o mensajes, si es necesario */
+
+/* Asegurarse de que los estilos sean responsivos */
+@media (max-width: 768px) {
+  .center_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columnizquierda, .columnderecha {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .registerButton {
+    width: 100%; /* Opcional: botón de ancho completo en dispositivos móviles */
+  }
 }
