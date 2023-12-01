@@ -45,6 +45,7 @@ const Registro = () => {
           const resp = await usuariosApi.create(registro);
           if (resp) {
             alert("Registro exitoso!");
+            router.push('/');
           } else {
             alert("Ha habido un error");
           }
