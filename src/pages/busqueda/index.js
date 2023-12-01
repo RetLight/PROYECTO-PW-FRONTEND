@@ -18,7 +18,7 @@ export default function BookSearch(){
         <div>
           <AppBar />
           <div className={styles.BarraLateral}>
-            {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/home?code=${code}`} l2={`/perfilUsuario?code=${code}`} l3={`/busqueda?code=${'code'}`} />}
+            {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/principal?code=${code}`} l2={`/miperfil?code=${code}`} l3={`/busqueda?code=${'code'}`} />}
           </div>
           <div className={styles.contenido}>
           <div className={styles.div1}>

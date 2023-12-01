@@ -6,7 +6,7 @@ import dayjs from 'dayjs';
 import Styles from '../Calendar/estilos.module.css';
 import Advise from '../Advise/Advise';
 
-export default function Calendar({code, setISBN13}) {
+export default function Calendar({id_usuario, id_libro, libro}) {
     const [selectedDate, setSelectedDate] = useState(dayjs());
     const [isVisible, setIsVisible] = useState(true);
     const [showAdvise, setShowAdvise] = useState(false);
@@ -50,7 +50,16 @@ export default function Calendar({code, setISBN13}) {
                   </div>
               </>
           )}
-          {showAdvise && <Advise reserva = {selectedDate.format('DD/MM/YYYY')} vencimiento={selectedDate.add(30, 'day').format('DD/MM/YYYY')} onOK={handleOK} code={code} setISBN13={setISBN13}/>}
+        {showAdvise && (
+                <Advise 
+                    fecha_reserva={selectedDate.toDate().toString()}
+                    fecha_devolucion={selectedDate.add(30, 'day').toDate().toString()}
+                    onOK={handleOK}
+                    id_usuario={id_usuario}
+                    id_libro={id_libro}
+                    libro={libro}
+                />
+        )}
       </div>
   );
 }

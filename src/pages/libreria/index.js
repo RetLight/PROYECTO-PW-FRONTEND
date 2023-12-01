@@ -7,7 +7,7 @@ import '../../app/globals.css';
 import { useRouter } from 'next/router';
 import librosApi from '../../api/libro.js'
 
-export default function BookLibrary() {
+export default function libreria() {
     const router = useRouter();
     const { code } = router.query;
     const [showCalendar, setShowCalendar] = useState(false);
@@ -15,8 +15,11 @@ export default function BookLibrary() {
     const bookxPage = 12;
     const [libros, setLibros] = useState([]);
     const sortedLibrary = [...libros].sort((a, b) => a.titulo.localeCompare(b.titulo));
-    const [getISBN13, setISBN13] = useState("");
-    const [showToolBar, setShowToolBar] = useState(true); 
+    const [showToolBar, setShowToolBar] = useState(true);
+    const [librocompleto, setLibrocompleto] = useState();
+
+    const [idUsuario,setIdUsuario] = useState('');
+    const [idLibro, setIdLibro] = useState('');
 
     const handleOnLoad = async () => {
         try {
@@ -27,9 +30,11 @@ export default function BookLibrary() {
           }
     }
 
-    const handleReservar = (isbn) => {
+    const handleReservar = (id_usuario, id_libro, libro) => {
         setShowCalendar(true);
-        setISBN13(isbn);
+        setIdLibro(id_libro);
+        setIdUsuario(id_usuario)
+        setLibrocompleto(libro)
     };
 
     const handleNext = () => {
@@ -52,7 +57,7 @@ export default function BookLibrary() {
         router.push(`/home?code=${code}`);
     }
 
-    const Libro = ({ titulo, isbn, autor, editor, imagen, estado}) => {
+    const Libro = ({ id_libro, id_usuario, titulo, isbn, autor, editor, imagen, estado, libro}) => {
         return (
             <div className={Styles.libro}>
                 <div className={Styles.p1}>
@@ -70,7 +75,7 @@ export default function BookLibrary() {
                 <div className={Styles.p4}>
                     <button 
                         className={Styles.buttonReserva}
-                        onClick={() => handleReservar(isbn)}
+                        onClick={() => handleReservar(id_libro, id_usuario, libro)}
                         disabled={estado === 'No disponible'}
                     >Reservar</button>
                 </div>
@@ -87,7 +92,7 @@ export default function BookLibrary() {
             <style jsx global>{`
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
             `}</style>
-            {showCalendar && <Calendar code={code} setISBN13={getISBN13}/>}
+            {showCalendar && <Calendar id_usuario={idUsuario} id_libro={idLibro} libro={librocompleto}/>}
             <header className={Styles.cabecera}>
                 <AppBar toggleToolBar={() => setShowToolBar(prevState => !prevState)} />
             </header>
@@ -109,12 +114,15 @@ export default function BookLibrary() {
                         {sortedLibrary.slice(startIndex, startIndex + bookxPage).map((libro, index) => (
                             <Libro
                                 key={index}
+                                id_libro={libro.id}
+                                id_usuario={code}
                                 titulo={libro.titulo}
                                 isbn={libro.ISBN13}
                                 autor={libro.autor}
                                 editor={libro.editorial}
                                 imagen={libro["portada_url"]}
                                 estado={libro.estado}
+                                libro={libro}
                             />
                         ))}
                     </div>

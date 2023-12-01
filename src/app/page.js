@@ -39,7 +39,13 @@ export default function Home() {
     const usuarioEncontrado = usuarios.find(user => user.email === usuario && user.password === password);
     
     if(usuarioEncontrado){
-      router.push(`/home?code=${usuarioEncontrado.NroDni}`); 
+      if(usuarioEncontrado.rol === 1){
+        router.push(`/principal_adm?code=${usuarioEncontrado.id}`); 
+      }
+      else{
+        router.push(`/principal?code=${usuarioEncontrado.id}`); 
+      }
+      
     }else{
       setMensajeError("Acceso denegado");
       alert('Acceso denegado');

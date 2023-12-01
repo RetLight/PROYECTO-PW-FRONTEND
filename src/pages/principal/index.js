@@ -33,7 +33,7 @@ export default function InicioUsuario() {
             </header>
             <div className={Styles.mainContent}>
                 <div className={Styles.BarraLateral}>
-                    {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/home?code=${code}`} l2={`/perfilUsuario?code=${code}`} l3={`/busqueda?code=${code}`} />}
+                    {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/principal?code=${code}`} l2={`/miperil?code=${code}`} l3={`/busqueda?code=${code}`} />}
                 </div>
                 <div className={Styles.contenido}>
                     <h2 className={Styles.Bienvenida}>Bienvenido, {nombres}</h2>
