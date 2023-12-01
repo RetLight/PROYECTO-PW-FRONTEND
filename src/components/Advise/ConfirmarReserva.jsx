@@ -49,6 +49,7 @@ export default function Advise(props) {
             console.log(estado);
 
             const resp = await librosApi.update(estado);
+            props.onReservaConfirmada();
 
             if (resp)
                 console.log("Datos actualizados!");

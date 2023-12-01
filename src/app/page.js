@@ -2,7 +2,7 @@
 import styles from './page.module.css'
 import Link from 'next/link'
 import { useEffect, useState } from 'react' 
-import { useRouter } from 'next/navigation'  
+import { useRouter } from 'next/navigation'
 import Imput from '../components/Imput/Imput.jsx'
 import usuariosApi from '../api/usuario.js'
 

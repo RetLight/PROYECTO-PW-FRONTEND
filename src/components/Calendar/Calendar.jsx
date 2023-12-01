@@ -4,9 +4,9 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import dayjs from 'dayjs';
 import Styles from '../Calendar/estilos.module.css';
-import Advise from '../Advise/Advise';
+import Advise from '../Advise/ConfirmarReserva.jsx';
 
-export default function Calendar({id_usuario, id_libro, libro}) {
+export default function Calendar({id_usuario, id_libro, libro, onReservaConfirmada}) {
     const [selectedDate, setSelectedDate] = useState(dayjs());
     const [isVisible, setIsVisible] = useState(true);
     const [showAdvise, setShowAdvise] = useState(false);
@@ -28,6 +28,7 @@ export default function Calendar({id_usuario, id_libro, libro}) {
 
     const handleOK = () => {
         setShowAdvise(false);
+        onReservaConfirmada();
     };
 
     return (
@@ -58,6 +59,7 @@ export default function Calendar({id_usuario, id_libro, libro}) {
                     id_usuario={id_usuario}
                     id_libro={id_libro}
                     libro={libro}
+                    onReservaConfirmada={onReservaConfirmada}
                 />
         )}
       </div>

@@ -30,6 +30,11 @@ export default function libreria() {
           }
     }
 
+    const onReservaConfirmada = () => {
+        setShowCalendar(false);
+        handleOnLoad();
+    };
+
     const handleReservar = (id_usuario, id_libro, libro) => {
         setShowCalendar(true);
         setIdLibro(id_libro);
@@ -75,7 +80,7 @@ export default function libreria() {
                 <div className={Styles.p4}>
                     <button 
                         className={Styles.buttonReserva}
-                        onClick={() => handleReservar(id_libro, id_usuario, libro)}
+                        onClick={() => handleReservar(id_usuario, id_libro, libro)}
                         disabled={estado === 'No disponible'}
                     >Reservar</button>
                 </div>
@@ -92,7 +97,7 @@ export default function libreria() {
             <style jsx global>{`
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
             `}</style>
-            {showCalendar && <Calendar id_usuario={idUsuario} id_libro={idLibro} libro={librocompleto}/>}
+            {showCalendar && <Calendar id_usuario={idUsuario} id_libro={idLibro} libro={librocompleto} onReservaConfirmada={onReservaConfirmada}/>}
             <header className={Styles.cabecera}>
                 <AppBar toggleToolBar={() => setShowToolBar(prevState => !prevState)} />
             </header>
@@ -107,7 +112,7 @@ export default function libreria() {
                     </div>
                     <div className={Styles.titulo2}>
                         <h3>Resultado de busqueda</h3>
-                        <button className={Styles.buttonReservas} onclick={handleReservado}>Ver mis reservas</button>
+                        <button className={Styles.buttonReservas} onClick={handleReservado}>Ver mis reservas</button>
                     </div>
                     
                     <div className={Styles.seccionlibros}>
@@ -117,7 +122,7 @@ export default function libreria() {
                                 id_libro={libro.id}
                                 id_usuario={code}
                                 titulo={libro.titulo}
-                                isbn={libro.ISBN13}
+                                isbn={libro.isbn13}
                                 autor={libro.autor}
                                 editor={libro.editorial}
                                 imagen={libro["portada_url"]}
