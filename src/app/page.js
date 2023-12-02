@@ -7,6 +7,7 @@ import Imput from '../components/Imput/Imput.jsx'
 import usuariosApi from '../api/usuario.js'
 
 export default function Home() {
+  
   const router = useRouter();
   const [usuario, setUsuario] = useState('');  
   const [password, setPassword] = useState('');  

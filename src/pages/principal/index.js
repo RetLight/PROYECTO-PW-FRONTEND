@@ -1,27 +1,48 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppBar from '../../components/AppBar/AppBar';
 import ToolBar from '../../components/ToolBar/ToolBar';
 import Styles from './home.module.css';
 import '../../app/globals.css';
 import Book from '../../components/Book/Book';
-import Reservas from '../../data/reservas.json';
-import Users from '../../data/users.json';
+import { useUsuario } from '../../userContext/userContext.js';
+import reservasApi from '../../api/reserva.js';
 import { useRouter } from 'next/router';
+import usuariosApi from '../../api/usuario.js';
 
 export default function InicioUsuario() {
     const router = useRouter();
     const { code } = router.query;
+
     const [showToolBar, setShowToolBar] = useState(true);
     const [showAllUltimas, setShowAllUltimas] = useState(false);
     const [showAllProximas, setShowAllProximas] = useState(false);
+    const [reservas, setReservas] = useState([]);
+    const [usuario, setUsuario] = useState([null]); // Cambiado a null
 
-    const currentUser = Users.find(u => u.NroDocumento === code);
-    const userInitials = currentUser 
-        ? currentUser.Nombres[0] + currentUser.Apellidos[0]
-        : '';
+    useEffect(() => {
+        const handleOnLoad = async () => {
+            try {
+                const rawReservas = await reservasApi.findAll();
+                setReservas(rawReservas.data);
+            } catch (error) {
+                console.error("Error fetching reservas:", error);
+            }
+            try {
+                const rawUsuario = await usuariosApi.findOne(code);
+                setUsuario(rawUsuario.data); // Asegúrate de que esto es un objeto
+                console.log(usuario)
+            } catch (error) {
+                console.error("Error fetching users:", error);
+            }
+        };
+        
+        handleOnLoad();
+    }, [code]); // Agregado usuarioId como dependencia
 
-    const nombres = currentUser?.Nombres;
-    const userReservations = Reservas.find(reserva => reserva.NroDocumento === code)?.libros || [];
+    //const userInitials = (usuario?.nombre[0] || '') + (usuario?.apellidos[0] || '');
+    const nombres = usuario?.nombre; // Corregido para acceder de manera segura
+
+    const userReservations = reservas.filter(reserva => reserva.idUsuario === code) || []; // Corregido a filter si necesitas un array
 
     return (
         <main className={Styles.contenedor}>
@@ -33,7 +54,7 @@ export default function InicioUsuario() {
             </header>
             <div className={Styles.mainContent}>
                 <div className={Styles.BarraLateral}>
-                    {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/principal?code=${code}`} l2={`/miperil?code=${code}`} l3={`/busqueda?code=${code}`} />}
+                    {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/principal`} l2={`/miperfil`} l3={`/busqueda`} />}
                 </div>
                 <div className={Styles.contenido}>
                     <h2 className={Styles.Bienvenida}>Bienvenido, {nombres}</h2>
