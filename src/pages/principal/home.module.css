@@ -16,7 +16,6 @@
     display: flex; /* Añade esta línea */
     flex-direction: column; /* Añade esta línea */
     justify-content: space-between; /* Añade esta línea */
-    position: sticky;
     top: 0;
     z-index: 10;
 }

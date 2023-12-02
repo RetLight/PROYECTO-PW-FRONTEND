@@ -40,7 +40,7 @@ export default function BookSearch() {
   }
   const [noResultsMessage, setNoResultsMessage] = useState('');
   const handleSearch = () => {
-    const results = library.filter((book) => {
+    const results = libros.filter((book) => {
       if (!searchOptions.title) {
         return book.titulo.toLowerCase().includes(searchTerm.toLowerCase());
       }
@@ -72,6 +72,7 @@ export default function BookSearch() {
   useEffect(() => {
     if (searchTerm !== '') {
       handleSearch();
+      handleOnLoad();
     }
   }, [searchTerm]);
 
@@ -86,14 +87,14 @@ export default function BookSearch() {
     <div >
           <AppBar />
           <div className={styles.BarraLateral}>
-          {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/homeAdmin?code=${code}`} l2={`/perfilAdmin?code=${code}`} l3={`biblioteca/?code=${code}`} />}
+          {showToolBar && <ToolBar b1={"Principal"} b2={"Perfil"} b3={"Biblioteca"} l1={`/principal_adm?code=${code}`} l2={`/miperfil_adm?code=${code}`} l3={`libreria_adm/?code=${code}`} />}
         </div>    
         <div className={styles.contenido}>
         <div className={styles.div1}>
         <div className={styles.div2}>
             <header className={styles.header}>
             <h1 className={styles.titulo}>Biblioteca</h1>
-            <Link href= {`/InsertarLibro?code=${code}`} className = {styles.button1}>Añadir un nuevo recurso</Link>
+            <Link href= {`/crear_recurso?code=${code}`} className = {styles.button1}>Añadir un nuevo recurso</Link>
             </header>
             <hr className="line" />
             <br />
@@ -120,8 +121,8 @@ export default function BookSearch() {
                     </p>
                     <p className={styles.libro_titulo}>{book.titulo}</p>
                   </div>
-                  <img className={styles.libro_imagen} src={book['imagen-portada-url']} alt={`Portada de ${book.titulo}`} />
-                  <p className={styles.libro_ISBN}>ISBN: {book.ISBN13}</p>
+                  <img className={styles.libro_imagen} src={book['portada_url']} alt={`Portada de ${book.titulo}`} />
+                  <p className={styles.libro_ISBN}>ISBN: {book.isbn13}</p>
                   <p className={styles.libro_autor}>Autor: {book.autor}</p>
                   <p className={styles.libro_editor}>Editor: {book.editorial}</p>
                 </div>

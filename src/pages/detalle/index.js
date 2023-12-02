@@ -3,30 +3,46 @@ import AppBar from '../../components/Appbar/AppBar';
 import ToolBar from '../../components/ToolBar/ToolBar';
 import '../../app/globals.css';
 import styles from '../detalle/Detallelibro.module.css';
-import detalles from '../../data/detalles.json';
+
+import libroApi from '../../api/libro.js'
 import { useRouter } from 'next/router';
 
-import librosApi from '../../api/libro.js'
-
 function DetalleLibro() {
+    const [showToolBar, setShowToolBar] = useState(true);
+    const [selectedBook, setSelectedBook] = useState(null);
     const router = useRouter();
     const { code } = router.query;
-    cont [libros, setLibro] = useState([]);
+    
+    const { id } = router.query;
 
-    const [showToolBar, setShowToolBar] = useState(true);
-
-    const handleOnLoad = async () => {
-        try{
-            const rawLibro = await librosApi.findOne(code);
-            setLibro(rawLibro.data);
-        }catch(error){
-            console.error("Error fetching users: ", error);
-        }
-    }
-
+    
+    const commonDescription = "In hac habitasse platea dictumst. Aliquam quis commodo diam. Aenean eu nunc sed mi dapibus auctor. Proin tristique arcu nec ex facilisis ullamcorper. Morbi auctor odio ex, auctor laoreet nulla placerat in. Phasellus dignissim, dolor viverra cursus fermentum, nunc ante viverra augue, condimentum sollicitudin ligula turpis non purus. Morbi at libero sed massa ultrices laoreet faucibus eget neque. Integer ac neque eget risus egestas gravida vitae eu nibh. Mauris id leo ex. Donec vitae semper lorem. Ut sollicitudin felis magna, congue dictum orci pulvinar sit amet. Integer a ipsum sem. Vivamus tincidunt mauris in sapien iaculis, nec aliquam justo posuere. Aliquam fermentum erat nisl, ac mattis risus luctus a. Duis nec libero bibendum, accumsan justo non, fermentum nisl. Phasellus tincidunt elit vel venenatis porttitor."
+    
     useEffect(() => {
-        handleOnLoad();
-      },[])
+        const fetchBooks = async () => {
+            try {
+                
+                const response = await libroApi.findOne(id);
+             
+                if (response && response.data) {
+                    const bookName = response.data.titulo;
+                    const bookDetails = {
+                        libro: bookName,
+                        descripcion: commonDescription
+                    };
+                    
+                   setSelectedBook(bookDetails)
+                    
+                } else {
+                    console.error('No se encontraron detalles para el libro con ID:', id);
+                }
+            } catch (error) {
+                console.error('Error al obtener detalles del libro:', error);
+            }
+        };
+
+        fetchBooks();
+    }, [id]);
 
     return (
         <div>
@@ -37,39 +53,26 @@ function DetalleLibro() {
                         b1={"Principal"}
                         b2={"Perfil"}
                         b3={"Biblioteca"}
-                        l1={`/principal?code=${'1234'}`}
-                        l2={`/miperfil?code=${'1234'}`}
-                        l3={`/libreria?code=${'1234'}`}
+                        l1={`/principal?code=${code}`}
+                        l2={`/miperfil?code=${code}`}
+                        l3={`/busqueda?code=${code}`}
                     />
                 )}
-                <div className={styles.SelectContainer}>
-                <select onChange={handleBookSelect}>
-                    <option value="">Selecciona un libro</option>
-                    {detalles.map((book) => (
-                        <option key={book.id} value={book.id}>
-                            {book.libro}
-                        </option>
-                    ))}
-                </select>
-                </div>
-                </div>
+            </div>
 
+            {selectedBook && (
                 <div className={styles.RecuadroDetalles}>
+                    <div></div>
                     <h1>Detalles del Libro</h1>
                     <div className={styles.InicialCirculo}>
-                        {selectedBook.libro.charAt(0)}
+                        {selectedBook.libro && selectedBook.libro.charAt(0)}
                     </div>
-                    <p className={styles.nombreLibro}> {selectedBook.libro}
-                    </p>
-                    <p className={styles.Descripcion}> {selectedBook.descripcion}</p>
-                    <div className={styles.ReservadoContainer}>
-                        <p className={styles.Reservado}>Reservado por: {selectedBook.nombre}</p>
-                    </div>
-                    <div className={styles.TipoContainer}>
-                        <span className={styles.TipoLabel}>Tipo:</span>
-                        <div className={styles.Tipo}>{selectedBook.tipo}</div>
-                    </div>
+                    <p className={styles.nombreLibro}> {selectedBook.libro}</p>
+                    <p className={styles.Descripcion}> {commonDescription}</p>
+                    
+                  
                 </div>
+            )}
         </div>
     );
 }

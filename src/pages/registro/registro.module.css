@@ -6,6 +6,8 @@
   color: #333; /* Ajusta el color según tu diseño */
   margin-top: 30px; /* Asegura un espacio en la parte superior */
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .subtitle {
@@ -13,6 +15,7 @@
   font-size: 20px;
   color: #666; /* Ajusta el color según tu diseño */
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -42,6 +45,7 @@
   font-size: 18px;
   color: #5E2BFF;
   margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .input_container {
@@ -49,7 +53,7 @@
 }
 
 .ingreso {
-  border: 1px solid #5E2BFF;
+  border: 1px solid #0048ff;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
